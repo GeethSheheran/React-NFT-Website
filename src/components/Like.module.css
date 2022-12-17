@@ -1,0 +1,64 @@
+.like {
+    margin: 5rem 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.content {
+    background-color: #555555;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.lightContent {
+    background-color: #eeeeee;
+}
+
+.title {
+    color: #ffffff;
+}
+
+.lightTitle {
+    color: #000000;
+}
+
+.description {
+    color: #cccccc;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+}
+
+.lightDescription {
+    color: #777777;
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+    .like {
+        margin: 0;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .content {
+        padding: 1rem 2rem;
+        border-radius: 0;
+    }
+
+    .content:nth-of-type(2) {
+        background-color: #111111;
+    }
+
+    .lightContent:nth-of-type(2) {
+        background-color: #ffffff;
+    }
+}

@@ -40,16 +40,18 @@ const data = [
   },
 ];
 
-const SuperRare = () => {
+const SuperRare = props => {
+  const titleClasses = `${classes.title} ${props.currentTheme === "light" ? classes.lightTitle : ""}`;
+  const descriptionClasses = `${classes.description} ${props.currentTheme === "light" ? classes.lightDescription : ""}`;
   return (
-    <div className="super-rare">
-      <div className="title-container">
-        <h2 className="title">LE Super Rare Auction</h2>
-        <p className="description">We have released four limited edition NFT's early which which can be bid on via <a href="/">OpenSea</a>.</p>
+    <div className={classes["super-rare"]}>
+      <div className={classes["title-container"]}>
+        <h2 className={titleClasses}>LE Super Rare Auction</h2>
+        <p className={descriptionClasses}>We have released four limited edition NFT's early which which can be bid on via <a href="#features">OpenSea</a>.</p>
       </div>
-      <div className="cards">
+      <div className={classes.cards}>
         {data.map(({ image, series, title, price, tag, time }, index) => (
-          <Card image={image} series={series} title={title} price={price} tag={tag} time={time} key={index}/>
+          <Card image={image} series={series} title={title} price={price} tag={tag} time={time} key={index} currentTheme={props.currentTheme}/>
         ))}
       </div>
     </div>

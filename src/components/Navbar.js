@@ -8,23 +8,28 @@ import classes from "./Navbar.module.css";
 
 const NavBar = props => {
   const [navState, setNavState] = useState(false);
+
+  const brandClasses = `${classes.brand} ${props.currentTheme === "light" ? classes.blur : ""}`;
+  const linkClasses = `${classes.links} ${props.currentTheme === "light" ? classes.light : ""}`;
+  const toggleContainerClasses = `${classes["toggle-container"]} ${props.currentTheme === "light" ? classes.toggleLight : ""}`;
+
   return (
-    <nav>
-      <div className="brand-container">
-        <div className="brand">
+    <nav className={classes.container}>
+      <div className={classes["brand-container"]}>
+        <div className={brandClasses}>
           <img src={logo} alt="logo" />
         </div>
-        <div className="toggle-container">
-          <div className="toggle">
+        <div className={toggleContainerClasses}>
+          <div className={classes.toggle}>
             {navState ? <MdClose onClick={() => setNavState(false)} /> : <GiHamburgerMenu onClick={() => setNavState(true)} />}
           </div>
-          <div className="mode" onClick={props.changeTheme}>
-            {props.currentTheme === "dark" ? <ImSun className="light" /> : <BsFillMoonFill className="dark" />}
+          <div className={classes.mode} onClick={props.changeTheme}>
+            {props.currentTheme === "dark" ? <ImSun className={classes.light} /> : <BsFillMoonFill className={classes.dark} />}
           </div>
         </div>
       </div>
-      <div className={`links-container ${navState ? "nav-visible" : ""}`}>
-        <ul className="links">
+      <div className={`${classes["links-container"]} ${navState ? classes["nav-visible"] : ""}`}>
+        <ul className={linkClasses}>
           <li>
             <a href="#features">Features</a>
           </li>
@@ -38,7 +43,7 @@ const NavBar = props => {
             <a href="#signup">Sign Up</a>
           </li>
           <li onClick={props.changeTheme}>
-            {props.currentTheme === "dark" ? <ImSun className="light" /> : <BsFillMoonFill className="dark" />}
+            {props.currentTheme === "dark" ? <ImSun className={classes.light} /> : <BsFillMoonFill className={classes.dark} />}
           </li>
         </ul>
       </div>

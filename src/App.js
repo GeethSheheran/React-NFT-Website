@@ -10,8 +10,8 @@ import Release from "./components/Release";
 import ScrollToTop from "./components/ScrollToTop";
 import Signup from "./components/Signup";
 import SuperRare from "./components/SuperRare";
-import "./scss/index.scss";
-import "./App.css";
+// import "./scss/index.scss";
+import classes from "./App.module.css";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -38,18 +38,20 @@ const App = () => {
     nav[0].style.transform = "none";
   }, 1500); // for responsive animations
 
+  const appClasses = `${classes["app-container"]} ${theme === "light" ? classes.light : ""}`;
+
   return (
-    <div className="app-container" data-theme={theme}>
-      <ScrollToTop />
+    <div className={appClasses}>
+      <ScrollToTop currentTheme={theme} />
       <NavBar changeTheme={changeTheme} currentTheme={theme} />
-      <Home />
-      <Free />
+      <Home currentTheme={theme} />
+      <Free currentTheme={theme} />
       <Clients />
-      <SuperRare />
-      <Release />
-      <Like />
-      <Signup />
-      <Footer />
+      <SuperRare currentTheme={theme} />
+      <Release currentTheme={theme} />
+      <Like currentTheme={theme} />
+      <Signup currentTheme={theme} />
+      <Footer currentTheme={theme} />
     </div>
   );
 }

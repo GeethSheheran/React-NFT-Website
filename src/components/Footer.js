@@ -29,13 +29,16 @@ const socialLink = [
   <FaTiktok />,
 ];
 
-const Footer = () => {
+const Footer = props => {
+  const upperClasses = `${classes.upper} ${props.currentTheme === "light" ? classes.lightUpper : ""}`;
+  const lowerClasses = `${classes.lower} ${props.currentTheme === "light" ? classes.lightLower : ""}`;
+  const linkClasses = `${classes.link} ${props.currentTheme === "light" ? classes.lightLink : ""}`;
   return (
-    <footer>
-      <div className="upper">
-        <div className="brand-container">
-          <div className="brand">
-            <img src={logo} alt="logo" />
+    <footer className={classes.footer}>
+      <div className={upperClasses}>
+        <div className={classes["brand-container"]}>
+          <div className={classes.brand}>
+            <img className={props.currentTheme === "light" ? classes.img : ""} src={logo} alt="logo" />
           </div>
           <p>Exclusive NFT Collection</p>
           <ul>
@@ -44,10 +47,10 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="links">
+        <div className={classes.links}>
           {links.map(({ title, data }, index) => {
             return (
-              <div className="link" key={index}>
+              <div className={linkClasses} key={index}>
                 <h4>{title}</h4>
                 <ul>
                   {data.map((link, index2) => (
@@ -59,9 +62,9 @@ const Footer = () => {
           })}
         </div>
       </div>
-      <div className="lower">
+      <div className={lowerClasses}>
         <span>&copy; Copyright 2022 NFT</span>
-        <span>Launching August 2022</span>
+        <span>Launching August 2024</span>
       </div>
     </footer>
   );
