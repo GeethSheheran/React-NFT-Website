@@ -8,17 +8,19 @@ import classes from "./Clients.module.css";
 const Clients = () => {
   const data = [clients1, clients2, clients3, clients4, clients5];
   return (
-    <div className={classes.clients}>
-      <div className={classes.container}>
-        <div className={classes["clients-container"]}>
-          {data.map((client, index) => (
-            <div className={classes.client} key={index}>
-              <img src={client} alt="client" />
-            </div>
-          ))}
+    <main className=".clientss">
+      <div className={classes.clients}>
+        <div className={classes.container}>
+          <div className={classes["clients-container"]}>
+            {data.map((client, index) => (
+              <div className={classes.client} key={index}>
+                <img src={client} alt="client" />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 

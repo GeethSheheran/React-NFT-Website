@@ -7,7 +7,7 @@ const Like = props => {
   const titleClasses = `${classes.title} ${props.currentTheme === "light" ? classes.lightTitle : ""}`;
   const descriptionClasses = `${classes.description} ${props.currentTheme === "light" ? classes.lightDescription : ""}`;
   return (
-    <div className={classes.like}>
+    <main className={classes.like}>
       <div className={classes.container}>
         <div className={contentClasses}>
           <div className={classes.image}>
@@ -23,11 +23,10 @@ const Like = props => {
           </div>
           <h2 className={titleClasses}>An NFT like no other</h2>
           <p className={descriptionClasses}>Don't miss out on the release of our new NFT. Sign up below to recieve updates when we go live on 11/22.</p>
-          <p className={descriptionClasses}>Don't miss out on the release of our new NFT. Sign up below to recieve updates when we go live on 11/22. Don't miss out on the release of our new NFT.
-          </p>
+          <p className={descriptionClasses}>Don't miss out on the release of our new NFT. Sign up below to recieve updates when we go live on 11/22. Don't miss out on the release of our new NFT.</p>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 

@@ -6,7 +6,7 @@ import classes from "./Free.module.css";
 
 const Free = props => {
   return (
-    <div className={classes.free}>
+    <main className={classes.free}>
       <div className={classes.container}>
         <div className={classes.background}>
           <div className={`${classes.ellipse} ${classes.pink}`}></div>
@@ -22,13 +22,13 @@ const Free = props => {
       </div>
       <div className={classes.cards}>
         <div className={classes.card1}>
-          <Card image={super1} series="Gloop Series" title="Purple Man" price={2.99} tag={12983} time={1} currentTheme={props.currentTheme} free={true}/>
+          <Card image={super1} series="Gloop Series" title="Purple Man" price={2.99} tag={12983} time={1} currentTheme={props.currentTheme} free={true} />
         </div>
         <div className={classes.card2}>
-          <Card image={release2} series="Gloop Series" title="Purple Man" price={3.95} tag="1094" time={2} currentTheme={props.currentTheme} free={true}/>
+          <Card image={release2} series="Gloop Series" title="Purple Man" price={3.95} tag="1094" time={2} currentTheme={props.currentTheme} free={true} />
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 

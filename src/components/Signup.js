@@ -6,7 +6,7 @@ const Signup = props => {
   const descriptionClasses = `${classes.description} ${props.currentTheme === "light" ? classes.lightDescription : ""}`;
   const btnClasses = `${classes.button} ${props.currentTheme === "light" ? classes.lightBtn : ""}`;
   return (
-    <div className={classes.signup}>
+    <main className={classes.signup}>
       <div className={classes.container}>
         <div className={classes.content}>
           <p className={classes["sub-title"]}>Launching Soon</p>
@@ -24,7 +24,7 @@ const Signup = props => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 
