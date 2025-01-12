@@ -43,7 +43,7 @@ const App = () => {
       <div id="like"><Like currentTheme={theme} /></div>
       <div id="own"><Own currentTheme={theme} /></div>
       <div id="faq"><Free currentTheme={theme} /></div>
-      {/* <div id="footer"><Footer currentTheme={theme} /></div> */}
+      <div id="footer"><Footer currentTheme={theme} /></div>
     </div>
   );
 }
