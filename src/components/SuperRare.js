@@ -40,22 +40,28 @@ const data = [
   },
 ];
 
-const SuperRare = props => {
+const SuperRare = (props) => {
   const titleClasses = `${classes.title} ${props.currentTheme === "light" ? classes.lightTitle : ""}`;
   const descriptionClasses = `${classes.description} ${props.currentTheme === "light" ? classes.lightDescription : ""}`;
+
+  // Duplicate the data to create the illusion of infinite scrolling
+  const infiniteData = [...data, ...data];
+
   return (
     <main className={classes["super-rare"]}>
       <div className={classes["title-container"]}>
         <h2 className={titleClasses}>LE Super Rare Auction</h2>
-        <p className={descriptionClasses}>We have released four limited edition NFT's early which which can be bid on via <a href="#features">OpenSea</a>.</p>
+        <p className={descriptionClasses}>We have released four limited edition NFT's early which can be bid on via <a href="#features">OpenSea</a>.</p>
       </div>
       <div className={classes.cards}>
-        {data.map(({ image, series, title, price, tag, time }, index) => (
-          <Card image={image} series={series} title={title} price={price} tag={tag} time={time} key={index} currentTheme={props.currentTheme} />
+        {infiniteData.map(({ image, series, title, price, tag, time }, index) => (
+          <div className={classes["card-container"]} key={index}>
+            <Card image={image} series={series} title={title} price={price} tag={tag} time={time} currentTheme={props.currentTheme} />
+          </div>
         ))}
       </div>
     </main>
   );
-}
+};
 
 export default SuperRare;

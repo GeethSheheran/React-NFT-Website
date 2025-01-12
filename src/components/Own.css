@@ -1,0 +1,64 @@
+/* Container style */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 12rem;
+  }
+  
+  /* Content section style */
+  .motion-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 1s ease, opacity 1s ease;
+  }
+  
+  /* Content section with border */
+  .content {
+    padding: 20px;
+    transition: border-color 1s ease; /* Smooth transition for border color */
+  }
+  .content h1, .content h3{
+    margin-bottom: 1rem;
+  }
+  .content h1, .content h3 ,li{
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+  }
+  
+  /* Image container style with keyframes animation */
+  .image-container {
+    background-color: #ff3998; /* Initial Pink */
+    padding: 20px;
+    animation: changeColor 6s infinite; /* Apply the color-changing animation */
+    border-radius: 12px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Keyframes for background color change */
+  @keyframes changeColor {
+    0% {
+      background-color: #ff3998; /* Initial Pink */
+    }
+    20% {
+      background-color: #ff8c00; /* Orange */
+    }
+    40% {
+      background-color: #5bd60c; /* Green */
+    }
+    60% {
+      background-color: #1f78d1; /* Blue */
+    }
+    80% {
+      background-color: #8a2be2; /* Purple */
+    }
+    100% {
+      background-color: #ff3998; /* Return back to Pink */
+    }
+  }
+  

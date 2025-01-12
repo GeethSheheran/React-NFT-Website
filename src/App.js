@@ -11,6 +11,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Signup from "./components/Signup";
 import SuperRare from "./components/SuperRare";
 import classes from "./App.module.css";
+import Own from "./components/Own";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -34,14 +35,15 @@ const App = () => {
     <div className={appClasses}>
       <ScrollToTop currentTheme={theme} />
       <NavBar changeTheme={changeTheme} currentTheme={theme} />
-      <Home currentTheme={theme} />
-      <Free currentTheme={theme} />
-      <Clients />
-      <SuperRare currentTheme={theme} />
-      <Release currentTheme={theme} />
-      <Like currentTheme={theme} />
-      <Signup currentTheme={theme} />
-      <Footer currentTheme={theme} />
+      <div id="home"><Home currentTheme={theme} /></div>
+      <div id="release"><Release currentTheme={theme} /></div>
+      <div id="achive"><Signup currentTheme={theme} /></div>
+      {/* <div id="superrare"><SuperRare currentTheme={theme} /></div> */}
+      <div id="clients"><Clients /></div>
+      <div id="like"><Like currentTheme={theme} /></div>
+      <div id="own"><Own currentTheme={theme} /></div>
+      <div id="faq"><Free currentTheme={theme} /></div>
+      {/* <div id="footer"><Footer currentTheme={theme} /></div> */}
     </div>
   );
 }

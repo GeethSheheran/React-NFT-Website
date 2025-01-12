@@ -1,5 +1,5 @@
 .releases {
-    margin: 5rem 0;
+    margin: 12rem 0;
     display: flex;
     flex-direction: column;
     gap: 5rem;
@@ -7,24 +7,27 @@
 
 .release {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     border-radius: 0.5rem;
 }
 
 .content {
     padding: 5rem 8rem;
-
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    justify-content: center; /* Vertically centers the content */
 }
 
 .title {
-    font-size: 2rem;
+    font-size: 5rem;
+}
+.title2 {
+    font-size: 1.2rem;
 }
 
 .description {
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .description a {
@@ -55,7 +58,7 @@
 }
 
 .image img {
-    height: 24rem;
+    height: 36rem;
 }
 
 .image .ellipse {
@@ -116,12 +119,9 @@
         gap: 2rem;
     }
 
-    .release:nth-of-type(1) .image {
-        grid-row: 1;
-    }
-
     .content {
         padding: 0;
+        justify-content: flex-start; /* Make sure content starts from the top on mobile */
     }
 
     .image {

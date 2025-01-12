@@ -3,11 +3,8 @@
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 4rem;
 }
-
 .content {
     background-color: #555555;
     display: flex;
@@ -23,6 +20,7 @@
 
 .title {
     color: #ffffff;
+    font-size: 4rem;
 }
 
 .lightTitle {
