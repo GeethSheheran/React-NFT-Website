@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Jersey+15&display=swap');
+
 .releases {
     margin: 12rem 0;
     display: flex;
@@ -20,7 +22,8 @@
 }
 
 .title {
-    font-size: 5rem;
+  font-family: 'Jersey 15', sans-serif;
+    font-size: 6rem;
 }
 .title2 {
     font-size: 1.2rem;
@@ -122,6 +125,7 @@
     .content {
         padding: 0;
         justify-content: flex-start; /* Make sure content starts from the top on mobile */
+        text-align: center;
     }
 
     .image {
@@ -134,5 +138,10 @@
 
     .ellipse {
         display: none !important;
+    }
+
+    .title{
+        font-size: 3rem;
+        margin-top: 4rem;
     }
 }

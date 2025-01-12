@@ -29,13 +29,13 @@ const Navbar = (props) => {
             )}
           </div>
           {/* Theme toggle icon */}
-          <div className={classes.mode} onClick={props.changeTheme}>
+          {/* <div className={classes.mode} onClick={props.changeTheme}>
             {props.currentTheme === "dark" ? (
               <ImSun className={classes.light} />
             ) : (
               <BsFillMoonFill className={classes.dark} />
             )}
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={`${classes["links-container"]} ${navState ? classes["nav-visible"] : ""}`}>

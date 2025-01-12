@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import release1 from "../assets/home.png";
-import release2 from "../assets/4.png"; // Example for the second image
-import release3 from "../assets/5.png"; // Example for the third image
+import release2 from "../assets/4.png"; 
+import release3 from "../assets/5.png"; 
 import classes from "./Release.module.css";
 
 const Release = () => {

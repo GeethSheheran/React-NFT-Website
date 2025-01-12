@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Jersey+15&display=swap');
-
+ 
 .home {
   margin-top: 6rem;
   margin-bottom: 6rem;
@@ -159,107 +159,77 @@
     background-color: #ff3998;
   }
 }
-
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 480px)  {
   .home {
     padding: 0 1rem;
     position: relative;
     overflow-x: hidden;
     margin-top: 1rem;
-    height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
   }
 
   .container {
     font-size: 16px;
     grid-template-columns: 1fr;
+    gap: 2rem; /* Add spacing between sections */
   }
 
   .content {
     width: 100%;
     align-items: center; /* Center content */
+    text-align: center; /* Center text inside content */
+    gap: 1.5rem; /* Adjust spacing */
   }
 
   .title {
-    font-size: 4rem;
-    max-width: 80%;
-    position: relative;
-    padding-top: 2rem;
-    text-align: center; /* Center the title text */
-  }
-
-  .countdown {
-    display: flex;
-    gap: 2rem;
-    width: 100%;
-    justify-content: center;
-    margin-top: 3rem;
-  }
-
-  .image-container {
-    display: none;
-  }
-
-  .image img {
-    height: 10rem;
-  }
-
-  .ellipse {
-    height: 6rem;
-    width: 6rem;
-    filter: blur(30px);
-  }
-
-  .pink {
-    right: 10%;
-  }
-
-  .orange {
-    left: -5%;
-  }
-
-  .button {
-    width: 100%;
-    padding: 1rem 0;
-  }
-
-  .countdown, .button {
-    width: 100%;
-    margin-top: 1rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .title {
-    font-size: 3rem;
+    font-size: 3rem; /* Matches 1080px title size */
     max-width: 90%;
-  }
-
-  .button {
-    width: 100%;
-    padding: 1rem;
-  }
-
-  .container {
-    grid-template-columns: 1fr;
+    padding-top: 2rem;
+    position: absolute;
+    text-align: center; /* Center the title text */
+    line-height: 1.2; /* Adjust line height for better readability */
   }
 
   .countdown {
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
     gap: 1rem;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
     justify-content: center;
+    margin-top: 10rem;
   }
 
-  .image img {
-    height: 8rem;
+  .timeUnit {
+    flex: 1 1 45%; /* Make each unit occupy half of the row */
+    text-align: center; /* Center time units */
+  }
+
+  .button {
+    width: 60%; /* Adjust button size */
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem; /* Adjust font size */
+    margin-top: 1rem;
   }
 
   .ellipse {
     height: 5rem;
     width: 5rem;
+    filter: blur(40px);
+  }
+
+  .pink {
+    right: 15%;
+  }
+
+  .orange {
+    left: 15%;
+  }
+
+  .image-container {
+    display: none; /* Hide images on smaller screens */
   }
 }
