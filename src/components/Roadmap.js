@@ -28,7 +28,7 @@ function Roadmap() {
                   <span></span>
                 </div>
                 <div id="prompt">
-                  <h3>PHASE 01</h3>
+                  <h3 className="subhead">PHASE 01</h3>
                   <ul>
                     <li>
                       Website Development: Launch the official website that
@@ -101,7 +101,7 @@ function Roadmap() {
                   <span></span>
                 </div>
                 <div id="prompt">
-                  <h3>PHASE 02</h3>
+                  <h3  className="subhead">PHASE 02</h3>
                   <ul>
                     <li>
                       {" "}
@@ -172,7 +172,7 @@ function Roadmap() {
                   <span></span>
                 </div>
                 <div id="prompt">
-                  <h3>PHASE 03</h3>
+                  <h3 className="subhead">PHASE 03</h3>
                   <ul>
                     <li>
                       P2E Game Release: Launch the Play-to-Earn game, where
@@ -239,7 +239,7 @@ function Roadmap() {
                   <span></span>
                 </div>
                 <div id="prompt">
-                  <h3>PHASE 04</h3>
+                  <h3 className="subhead">PHASE 04</h3>
                   <ul>
                     <li>
                       Animated Adaptations: Begin exploring new formats such as
