@@ -244,7 +244,7 @@ button:hover {
   }
 
   .title {
-    font-size: 3rem; /* Matches 1080px title size */
+    font-size: 3.3rem; /* Matches 1080px title size */
     max-width: 90%;
     padding-top: 2rem;
     position: absolute;
@@ -257,8 +257,18 @@ button:hover {
     gap: 1rem;
     width: 100%;
     justify-content: center;
-    margin-top: 10rem;
+    margin-top: 20rem;
   }
+.short{
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 480px) {
+  .home {
+    background-image: url('../assets/opacity.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+  }
+}
 
   .timeUnit {
     flex: 1 1 45%; /* Make each unit occupy half of the row */

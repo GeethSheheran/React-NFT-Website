@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Jersey+15&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
 
-.header{
+.header {
   font-size: 6rem;
   color: #fff;
   font-family: "Jersey 15", sans-serif;
@@ -16,7 +16,8 @@
   max-width: 100vw; /* Set max width to screen width */
   width: 100%; /* Ensure it takes full width */
   margin: 30px auto; /* Center the container */
-  padding: 0 20px; /* Optional: Add horizontal padding for spacing */z-index: 1;
+  padding: 0 20px; /* Optional: Add horizontal padding for spacing */
+  z-index: 1;
   position: relative;
 }
 
@@ -30,9 +31,18 @@
     grid-template-columns: 1fr; /* Stacked vertically on mobile */
     padding: 0; /* Optional: Add less padding on mobile */
   }
+  .header {
+    font-size: 2rem;
+  }
+  #prompt {
+    width: 90vw !important;
+  }
+  .roadmap-container {
+    padding: 0 1rem;
+  }
 }
 
-/* From Uiverse.io by 00Kubi */ 
+/* From Uiverse.io by 00Kubi */
 .container {
   position: relative;
   max-width: 100vw; /* Set max width to screen width */
@@ -59,9 +69,7 @@
   background: linear-gradient(45deg, #1a1a1a, #262626);
   border: 2px solid rgba(255, 255, 255, 0.1);
   overflow: hidden;
-  box-shadow:
-    0 0 20px rgba(0, 0, 0, 0.3),
-    inset 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), inset 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .card-content {
@@ -84,10 +92,10 @@
   color: rgba(255, 255, 255, 0.7);
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   width: 35vw;
-  top:15%;
+  top: 15%;
 }
 
-#prompt li{
+#prompt li {
   font-size: 0.8rem;
   text-align: center;
   margin-bottom: 1rem;
@@ -106,8 +114,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0 0 15px rgba(0, 255, 170, 0.3));
-  text-shadow:
-    0 0 10px rgba(92, 103, 255, 0.5),
+  text-shadow: 0 0 10px rgba(92, 103, 255, 0.5),
     0 0 20px rgba(92, 103, 255, 0.3);
 }
 

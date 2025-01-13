@@ -15,7 +15,13 @@ import img8 from "../assets/487.png";
 import img9 from "../assets/488.png";
 import img10 from "../assets/489.png";
 import img11 from "../assets/490.png";
-import img12 from "../assets/11.png";
+import img12 from "../assets/1000.png";
+import img13 from "../assets/1001.png";
+import img14 from "../assets/1002.png";
+import img15 from "../assets/1003.png";
+import img16 from "../assets/1004.png";
+import img17 from "../assets/1005.png";
+import img18 from "../assets/1006.png";
 
 import "./What.css";
 
@@ -74,10 +80,10 @@ const itemData = [
   { img: img10, title: "NFT" },
   { img: img11, title: "NFT" },
   { img: img12, title: "NFT" },
-  { img: img12, title: "NFT" },
-  { img: img12, title: "NFT" },
-  { img: img12, title: "NFT" },
-  { img: img12, title: "NFT" },
-  { img: img12, title: "NFT" },
-  { img: img12, title: "NFT" },
+  { img: img13, title: "NFT" },
+  { img: img14, title: "NFT" },
+  { img: img15, title: "NFT" },
+  { img: img16, title: "NFT" },
+  { img: img17, title: "NFT" },
+  { img: img18, title: "NFT" },
 ];
