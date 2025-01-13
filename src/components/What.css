@@ -7,6 +7,7 @@ h1 {
   font-family: "Jersey 15", sans-serif;
   text-align: left;
   margin: 0;
+  text-align: left !important;
 }
 h3 {
   font-size: 2rem;
@@ -38,7 +39,7 @@ p {
 
   h1 {
     font-size: 2rem;
-    text-align: center;
+    text-align: center !important;
   }
   h3 {
     font-size: 1.2rem;

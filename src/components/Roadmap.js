@@ -4,7 +4,7 @@ import "./Roadmap.css";
 function Roadmap() {
   return (
     <div >
-      <h1>Road Map</h1>
+      <h1 className="header">Road Map</h1>
       <div className="roadmap-container">
       <div className="roadmap-item">
         <div class="container noselect">

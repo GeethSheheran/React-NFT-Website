@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from "react";
-import release1 from "../assets/home.png";
-import release2 from "../assets/4.png"; 
-import release3 from "../assets/5.png"; 
+import release1 from "../assets/slide1.png";
+import release2 from "../assets/slide2.png"; 
+import release3 from "../assets/slide3.png"; 
+import release4 from "../assets/slide4.png"; 
+import release5 from "../assets/slide5.png"; 
+import release6 from "../assets/slide6.png"; 
+import release7 from "../assets/slide7.png"; 
 import classes from "./Release.module.css";
 
 const Release = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  const images = [release1, release2, release3];
+  const images = [release1, release2, release3, release4, release5, release6, release7];
 
   useEffect(() => {
     const interval = setInterval(() => {

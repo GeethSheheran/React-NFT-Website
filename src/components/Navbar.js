@@ -29,68 +29,72 @@ const Navbar = (props) => {
 
   return (
     <nav className={containerClasses}>
-      <div className={classes["brand-container"]}>
-        <div className={brandClasses}>
-          <img src={logo} alt="logo" />
-        </div>
-        <div className={toggleContainerClasses}>
-          <div className={classes.toggle}>
-            {navState ? (
-              <MdClose onClick={() => setNavState(false)} />
-            ) : (
-              <GiHamburgerMenu onClick={() => setNavState(true)} />
-            )}
-          </div>
-        </div>
+  <div className={classes["brand-container"]}>
+    <div className={brandClasses}>
+      <img src={logo} alt="logo" />
+    </div>
+    <div className={toggleContainerClasses}>
+      <div className={classes.toggle}>
+        {navState ? (
+          <MdClose onClick={() => setNavState(false)} />
+        ) : (
+          <GiHamburgerMenu onClick={() => setNavState(true)} />
+        )}
       </div>
+    </div>
+  </div>
 
-      {/* Links Container */}
-      <div className={`${classes["links-container"]} ${navState ? classes["nav-visible"] : ""}`}>
-        <ul className={linkClasses}>
-          <li>
-            <Link to="home" smooth={true} duration={500} offset={-50}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="release" smooth={true} duration={500} offset={-50}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="achive" smooth={true} duration={500} offset={-50}>
-              Achieve
-            </Link>
-          </li>
-          <li>
-            <Link to="own" smooth={true} duration={500} offset={-50}>
-              Your Phi
-            </Link>
-          </li>
-          <li>
-            <Link to="faq" smooth={true} duration={500} offset={-50}>
-              FAQ
-            </Link>
-          </li>
+  {/* Links Container */}
+  <div className={`${classes["links-container"]} ${navState ? classes["nav-visible"] : ""}`}>
+    <ul className={linkClasses}>
+      <li>
+        <Link to="home" smooth={true} duration={500} offset={-50}>
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link to="release" smooth={true} duration={500} offset={-50}>
+          About
+        </Link>
+      </li>
+      <li>
+        <Link to="achive" smooth={true} duration={500} offset={-50}>
+          Achieve
+        </Link>
+      </li>
+      <li>
+        <Link to="own" smooth={true} duration={500} offset={-50}>
+          Your Phi
+        </Link>
+      </li>
+      <li>
+        <Link to="faq" smooth={true} duration={500} offset={-50}>
+          FAQ
+        </Link>
+      </li>
 
-          {/* Social Media Links in Hamburger Menu */}
-          <li className={classes.socialMediaLinks}>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
-              <BsFacebook />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
-              <BsTwitter />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
-              <BsInstagram />
-            </a>
-            <a href="https://tiktok.com" target="_blank" rel="noreferrer">
-              <FaTiktok />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      {/* Social Media Links in Hamburger Menu */}
+      <li className={classes.socialMediaLinks}>
+        <a href="https://facebook.com" target="_blank" rel="noreferrer">
+          <BsFacebook />
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noreferrer">
+          <BsTwitter />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noreferrer">
+          <BsInstagram />
+        </a>
+        <a href="https://tiktok.com" target="_blank" rel="noreferrer">
+          <FaTiktok />
+        </a>
+      </li>
+      <li>
+        <button>Connect</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
   );
 };
 

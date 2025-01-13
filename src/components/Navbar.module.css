@@ -35,6 +35,7 @@
     list-style-type: none;
     display: flex;
     gap: 4rem;cursor: pointer;
+    align-items: center;
   }
   
   .links li .dark {
@@ -120,6 +121,7 @@
   
     .links li a {
       color: #111111;
+      align-items: center; 
     }
   
     .light li a {
