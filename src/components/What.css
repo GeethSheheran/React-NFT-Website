@@ -13,6 +13,7 @@ h3 {
   font-size: 2rem;
   font-family: "Jersey 15", sans-serif;
   color: #fff;
+  text-align: left !important;
   margin-top: 1rem;
 }
 
@@ -20,7 +21,9 @@ p {
   font-size: 1rem;
   color: #fff;
   font-family: "Jura", serif;
-  font-weight: 200;
+  text-align: left !important;
+    text-align: left;
+    font-weight: 200;
 }
 
 .container {
@@ -38,17 +41,17 @@ p {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center !important;
     margin-top: 3rem;
   }
   h3 {
-    font-size: 1.2rem;
-    text-align: center;
+    font-size: 1.6rem;
+    text-align: center !important;
   }
   p {
     font-size: 1rem;
-    text-align: center;
+    text-align: center !important;
   }
   li{
     margin-left: 0.5rem;

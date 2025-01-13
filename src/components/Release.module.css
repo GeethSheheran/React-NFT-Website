@@ -28,10 +28,12 @@
   font-family: 'Jersey 15', sans-serif;
     font-size: 6rem;
     color: white;
+    text-align: left;
 }
 .title2 {
     color: white;
   font-family: 'Jersey 15', sans-serif;
+    text-align: left;
     font-size: 2rem;
 }
 
@@ -135,7 +137,7 @@
     .content {
         padding: 0;
         justify-content: flex-start; /* Make sure content starts from the top on mobile */
-        text-align: center;
+        text-align: center !important;
     }
 
     .image {
@@ -152,6 +154,15 @@
 
     .title{
         font-size: 3rem;
+        text-align: center !important;
         margin-top: 4rem;
+    }
+    .title2{
+        font-size: 1.6rem;
+        text-align: center !important;
+    }
+    .description{
+        text-align: center !important;
+
     }
 }

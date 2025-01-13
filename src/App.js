@@ -44,9 +44,9 @@ const App = () => {
       <div id="achive"><What currentTheme={theme} /></div>
       {/* <div id="superrare"><SuperRare currentTheme={theme} /></div> */}
       <div id="clients"><Clients /></div>
-      <div id="like"><Like currentTheme={theme} /></div>
+      {/* <div id="like"><Like currentTheme={theme} /></div> */}
       {/* <div id="own"><Own currentTheme={theme} /></div> */}
-      {/* <div><World/></div> */}
+      <div  id="like"><World currentTheme={theme}/></div>
       <div id="roadmap"><Roadmap currentTheme={theme} /></div>
       <div id="faq"><FAQSection currentTheme={theme} /></div>
       <div id="footer"><Footer currentTheme={theme} /></div>

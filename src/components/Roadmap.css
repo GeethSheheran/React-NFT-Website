@@ -115,7 +115,7 @@
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0 0 15px rgba(0, 255, 170, 0.3));
   text-shadow: 0 0 10px rgba(92, 103, 255, 0.5),
-    0 0 20px rgba(92, 103, 255, 0.3);
+    0 0 20px #5c67ff4d;
 }
 
 .subtitle {

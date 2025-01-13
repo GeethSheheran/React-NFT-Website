@@ -1,7 +1,8 @@
 /* Clients Section */
 .clients {
     padding: 0rem 0;
-    margin-top: 35rem;
+    margin-top: 30rem;
+    margin-bottom: 5rem;
 }
 
 /* Clients Container */
@@ -15,7 +16,7 @@
 @media screen and (min-width: 280px) and (max-width: 1080px) {
     .clients {
         padding: 5rem 1rem; /* Reduced padding for mobile */
-        margin-top: 20rem;
+        margin-top: 25rem;
     }
 
     .clients-container {

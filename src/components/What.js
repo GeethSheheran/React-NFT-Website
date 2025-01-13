@@ -1,6 +1,7 @@
 import React from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
+import { Link } from "react-scroll"; // Import Link from react-scroll
 import logo from "../assets/logo.png";
 
 // Import local images
@@ -29,8 +30,8 @@ export default function What() {
   return (
     <div className="container">
       {/* Left column: ImageList */}
-      <div className="image-list-column">
-        <ImageList sx={{ width: 500, height: 750 }} variant="woven" cols={3} gap={8}>
+      <div id="image-list-column" className="image-list-column">
+        <ImageList sx={{ width: 500, height: 700 }} variant="woven" cols={3} gap={8}>
           {itemData.map((item) => (
             <ImageListItem key={item.img}>
               <img
@@ -58,9 +59,19 @@ enthusiasts who appreciate creativity and imagination.</p>
   their submissions, and reward the best with NFTs from Phi’s collection.</li>
   <li>Building a Vibrant Community: Engage art lovers in a collaborative, creative community where NFT holders can
   vote on street art, participate in exclusive events, and influence the direction of future projects.</li>
-</ul>
+</ul><br/>
 <p>Join us in preserving street art’s vibrant culture and become part of a creative movement that bridges the physical
 and digital worlds.</p>
+
+        {/* Scroll Button */}
+        <Link 
+          to="image-list-column" // Use the ID of the section to scroll to
+          smooth={true}
+          duration={500}
+          className="scroll-button"
+        >
+         
+        </Link>
       </div>
     </div>
   );
