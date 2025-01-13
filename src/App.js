@@ -12,6 +12,10 @@ import Signup from "./components/Signup";
 import SuperRare from "./components/SuperRare";
 import classes from "./App.module.css";
 import Own from "./components/Own";
+import Roadmap from "./components/Roadmap";
+import World from "./components/World";
+import What from "./components/What";
+import FAQSection from "./components/FAQSection";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -37,12 +41,14 @@ const App = () => {
       <NavBar changeTheme={changeTheme} currentTheme={theme} />
       <div id="home"><Home currentTheme={theme} /></div>
       <div id="release"><Release currentTheme={theme} /></div>
-      <div id="achive"><Signup currentTheme={theme} /></div>
+      <div id="achive"><What currentTheme={theme} /></div>
       {/* <div id="superrare"><SuperRare currentTheme={theme} /></div> */}
       <div id="clients"><Clients /></div>
       <div id="like"><Like currentTheme={theme} /></div>
-      <div id="own"><Own currentTheme={theme} /></div>
-      <div id="faq"><Free currentTheme={theme} /></div>
+      {/* <div id="own"><Own currentTheme={theme} /></div> */}
+      {/* <div><World/></div> */}
+      <div id="roadmap"><Roadmap currentTheme={theme} /></div>
+      <div id="faq"><FAQSection currentTheme={theme} /></div>
       <div id="footer"><Footer currentTheme={theme} /></div>
     </div>
   );

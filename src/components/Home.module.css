@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Jersey+15&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
  
 .home {
   margin-top: 6rem;
@@ -14,22 +15,23 @@
 }
 
 .content {
-  margin-top: 3rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
   align-items: flex-start;
 }
-
+ 
 .title {
-  color: #d9e2ff;
+  color: #1D013F;
   font-family: 'Jersey 15', sans-serif;
-  font-size: 8rem;
+  font-size: 6rem;
   line-height: 1;
   word-wrap: break-word;
-  max-width: 60%;
+  max-width: 50%;
   position: absolute;
-  padding-top: 2rem;
+  padding-bottom: 0rem;
+  -webkit-text-stroke: 2px #fff;
+  text-align: left !important;
 }
 
 .lightTitle {
@@ -43,7 +45,9 @@
 }
 
 .short {
-  color: #9b9b9b;
+    font-family: "Jura", serif;
+  color: #00C853;
+  font-weight: 400;
 }
 
 .lightDescription {
@@ -53,11 +57,12 @@
 .countdown {
   display: flex;
   gap: 4rem;
-  margin-top: 15rem;
+  margin-top: 12rem;
   padding: 1rem;
   border-radius: 1rem;
   width: fit-content;
-  justify-content: center;
+    font-family: "Jura", serif;
+    justify-content: center;
 }
 
 .timeUnit {
@@ -69,24 +74,27 @@
 .timeValue {
   font-size: 3rem;
   font-weight: bold;
-  color: #ff3998;
+  color: #00C853;
 }
 
 .timeLabel {
   font-size: 1.2rem;
   color: #ffffff;
-  text-transform: uppercase;
+    font-family: "Jura", serif;
+    text-transform: uppercase;
+    font-weight: 200;
 }
 
 .button {
   color: #ffffff;
-  background-color: #111111;
+    font-family: "Jura", serif;
+    background-color: #111111;
   font-weight: bold;
   padding: 1rem 5rem;
   border-radius: 2rem;
-  box-shadow: 0 0 6px 0 #9d60d480;
+  box-shadow: 0 0 6px 0 #00C853;
   border: solid 3px transparent;
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #5bd60c, #ff3998);
+  background-image: linear-gradient(101deg,#00C853, #1D013F), linear-gradient(101deg, #00C853, #1D013F);
   background-origin: border-box;
   background-clip: content-box, border-box;
   box-shadow: 2px 1000px 1px #111111 inset;
@@ -124,39 +132,27 @@
 .pink {
   top: 30%;
   right: 50%;
-  background-color: #ff3998;
+  background-color: #1D013F;
 }
 
 .orange {
   bottom: 40%;
   left: 40%;
-  background-color: #5bd60c;
+  background-color: #00C853;
 }
 
 @keyframes moveEllipse {
   0% {
     transform: translate(0, 0);
-    background-color: #ff3998;
+    background-color: #1D013F;
   }
-  20% {
-    transform: translate(50px, -50px);
-    background-color: #ff8c00;
-  }
-  40% {
+  50% {
     transform: translate(0, 0);
-    background-color: #5bd60c;
-  }
-  60% {
-    transform: translate(-50px, 50px);
-    background-color: #1f78d1;
-  }
-  80% {
-    transform: translate(50px, 50px);
-    background-color: #8a2be2;
+    background-color: #00C853;
   }
   100% {
     transform: translate(0, 0);
-    background-color: #ff3998;
+    background-color: #1D013F;
   }
 }
 @media screen and (max-width: 480px)  {
@@ -233,3 +229,4 @@
     display: none; /* Hide images on smaller screens */
   }
 }
+

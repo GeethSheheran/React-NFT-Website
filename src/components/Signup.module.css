@@ -1,218 +1,158 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Jersey+15&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Jersey+15&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
 
-/* Signup Section */
 .signup {
-    padding: 0rem 0;
-    overflow-y: hidden;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #111111;
 }
 
-/* Container Layout */
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal-width columns for desktop */
-    font-size: 18px;
-    gap: 2rem;
-    text-align: left; /* Left-align text for desktop */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
 }
 
-.titleClasses {
-    text-align: left;
-}
-
-/* Typography */
-h3 {
-    color: #ffffff;
-    text-align: left;
-}
-
-.sub-title {
-    color: #ff3998;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    text-align: left;
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .title {
-  font-family: 'Jersey 15', sans-serif;
-    color: #ffffff;
-    font-size: 6rem;
-    text-align: left;
+  font-size: 6rem;
+  color: #fff;
+  font-family: "Jersey 15", sans-serif;
+  margin-bottom: 20px;
 }
 
 .lightTitle {
-    color: #000000;
+  color: #fff;
 }
 
 .description {
-    font-size: 1rem;
-    color: #cccccc;
-    line-height: 1.5rem;
-    text-align: left; /* Left-align text for desktop */
+  font-size: 1rem;
+  color: #fff;
+  font-family: "Jura", serif;
+  font-weight: 200;
+  margin-bottom: 20px;
 }
 
 .lightDescription {
-    color: #777777;
+  color: #ccc;
 }
 
-/* Content Styling */
-.content {
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center; /* Center-align content for mobile */
-    text-align: left; /* Left-align text for desktop */
+h3 {
+  font-size: 2rem;
+  font-family: "Jersey 15", sans-serif;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
-/* Button Styling */
-button {
-    color: #ffffff;
-    background-color: #111111;
-    font-weight: bold;
-    padding: 1rem 3rem;
-    border-radius: 2rem;
-    border: solid 3px transparent;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #ff3998, #ff8139);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    box-shadow: 2px 1000px 1px #111111 inset;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
-}
-
-.button:hover {
-    box-shadow: none;
-}
-
-.lightBtn {
-    color: #000000;
-    background-color: #ffffff;
-    box-shadow: 2px 1000px 1px #ffffff inset;
-}
-
-/* Image Container */
-.image-container {
-    text-align: center;
-    position: relative;
-    z-index: 10;
-    width: 80%;
-    height: 120%;
-    order: -1; /* Ensures image appears on the left */
-}
-
-.image img {
-    width: 120%;
-    height: 100%;
-    object-fit: contain;
-}
-
-/* Ellipse Styling */
-.ellipse {
-    z-index: -1;
-    position: absolute;
-    height: 15rem;
-    width: 15rem;
-    filter: blur(100px);
-}
-
-.pink {
-    top: 40%;
-    right: 40%;
-    background-color: #ff3998;
-}
-
-.orange {
-    bottom: 40%;
-    left: 40%;
-    background-color: #ff8139;
-}
-
-/* List Items - Remove Square Points */
 ul {
-    list-style-type: none; /* Remove square points */
-    padding-left: 0; /* Remove left padding */
+  list-style-type: none;
+  padding: 0;
 }
 
-li {
-    color: #cccccc;
-    font-size: 1rem;
-    margin-bottom: 1rem; /* Add space between list items */
-    text-align: left; /* Left-align text for desktop */
+ul li {
+  font-family: "Jura", serif;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 200;
+  margin-bottom: 10px;
 }
 
-/* Responsive Design */
-@media screen and (min-width: 280px) and (max-width: 1080px) {
-    .signup {
-        padding: 1rem;
-        margin-top: 1rem;
-        overflow-x: hidden;
-    }
-.title{
+.image-container {
+  position: relative;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ellipse-container {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.ellipse {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto; /* Stack elements vertically */
+    text-align: center; /* Center the content */
+    padding: 0;
+  }
+
+  .content {
+    align-items: center;
     text-align: center;
-    font-size: 3rem;
+    padding: 20px; /* Add padding to avoid content touching edges */
+  }
+
+  /* Hide the image and the coin in mobile view */
+  .image-container {
+    display: none;
+  }
+
+  .coin {
+    display: none;
+  }
 }
-    .container {
-        font-size: 16px;
-        grid-template-columns: 1fr; /* Single-column layout for mobile */
-        gap: 1rem;
-    }
 
-    .content {
-        align-items: center; /* Center-align content for mobile */
-        text-align: center;
-        gap: 1.5rem;
-    }
-    
-    li {
-        padding-left: 2rem;
-    }
+@media (max-width: 480px) {
+  .title {
+    font-size: 2.5rem; /* Adjusted font size for mobile */
+  }
 
-    /* Ensure left-side elements appear on top, followed by right-side elements */
-    .container > :nth-child(1) { /* First element in the grid */
-        order: -1; /* Move it to the top */
-    }
+  .description {
+    font-size: 1rem; /* Adjusted font size for mobile */
+  }
 
-    .container > :nth-child(2) { /* Second element in the grid */
-        order: 1; /* Place below the first element */
-    }
+  h3 {
+    font-size: 1.2rem; /* Adjusted font size for mobile */
+  }
 
-    .image-container {
-        position: relative;
-        right: 0;
-        top: 0;
-        width: 100%;
-        height: auto;
-    }
+  ul li {
+    font-size: 0.9rem;
+  }
 
-    .image img {
-        height: auto;
-        width: 100%;
-    }
-
-    .ellipse {
-        height: 6rem;
-        width: 6rem;
-        filter: blur(30px);
-    }
-
-    .pink {
-        right: 20%;
-    }
-
-    .orange {
-        left: 20%;
-    }
-
-    button {
-        padding: 0.8rem 2rem; /* Adjust button size for mobile */
-        font-size: 0.9rem;
-    }
-    h1, h3 {
-        text-align: center;
-    }
-    .description {
-        text-align: center; /* Left-align text for desktop */
-    }
-    
+  .signup {
+    padding: 0;
+    flex-direction: column;
+    text-align: center; /* Center text on mobile */
+  }
 }
+
+@media (min-width: 769px) {
+  .container {
+    grid-template-columns: 1fr 1fr; /* Maintain 2-column layout for desktop */
+    gap: 30px;
+  }
+
+  .content {
+    order: 2; /* Content on the right */
+  }
+
+  .image-container {
+    order: 1; /* Image on the left */
+  }
+}
+
+

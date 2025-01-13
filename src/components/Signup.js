@@ -11,12 +11,21 @@ const Signup = (props) => {
   const btnClasses = `${classes.button} ${
     props.currentTheme === "light" ? classes.lightBtn : ""
   }`;
-
+ 
   return (
     <main className={classes.signup}>
       <div className={classes.container}>
-        <div className={classes.content}>
+
+      <div className={classes["image-container"]}>
+          {/* <div className={classes.image}>
+            <img src={signup} alt="home" />
+          </div> */}
           <h1 className={titleClasses}>What We Aim to Achieve?</h1>
+
+          <div className={classes["ellipse-container"]}>
+          </div>
+        </div>
+        <div className={classes.content}>
           <h3>
             Preserving Creativity, Inspiring Generations: A Movement for Art and Artists.
           </h3>
@@ -51,15 +60,6 @@ const Signup = (props) => {
             of a creative movement that bridges the physical and digital worlds.
           </p>
           {/* <button className={btnClasses}>Sign Up</button> */}
-        </div>
-        <div className={classes["image-container"]}>
-          <div className={classes.image}>
-            <img src={signup} alt="home" />
-          </div>
-          <div className={classes["ellipse-container"]}>
-            <div className={`${classes.ellipse} ${classes.pink}`}></div>
-            <div className={`${classes.ellipse} ${classes.orange}`}></div>
-          </div>
         </div>
       </div>
     </main>

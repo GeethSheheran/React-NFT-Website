@@ -37,7 +37,10 @@ const Free = () => {
     arrowColor: "#ddd",
     rowTitleFontSize: "16px",
     rowContentFontSize: "14px",
-    rowContentPadding: "10px 0",
+    rowContentPadding: "10px 0", rowTitleFontFamily: "'Roboto', sans-serif", // Added custom font family
+    rowContentFontFamily: "'Jura', serif", // Added custom font family for content
+    rowTitleWidth: "100%", // Full width for the title
+    rowContentWidth: "95%",
   };
 
   return (

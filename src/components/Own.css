@@ -11,7 +11,9 @@
 li{
   text-align: left;
 }
-
+.title{
+  font-family: 'Jersey 15', sans-serif;
+}
 /* Mobile responsive styling */
 @media (max-width: 768px) {
   .container {

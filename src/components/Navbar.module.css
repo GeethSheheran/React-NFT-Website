@@ -3,117 +3,144 @@
     justify-content: space-between;
     align-items: center;
     transform: none !important;
-}
-
-.brand img {
+    position: fixed; /* Fix the navbar at the top */
+    top: 0; /* Position it at the top of the viewport */
+    left: 0; /* Align it to the left edge */
+    width: 100%; /* Ensure it spans the entire width */
+    background-color: transparent; /* Transparent background initially */
+    z-index: 50; /* Ensure it appears above other content */
+    padding: 30px;
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+  }
+  
+  .container.scrolled {
+    box-shadow: 0 1px 1px #00C853; /* Optional: Add a shadow for better visibility */
+    background-color: #222; /* Background color after scrolling */
+  }
+  
+  
+  .socialMediaLinks {
+    display: flex;
+    gap: 1rem;cursor: pointer;
+  }
+  .brand img {
     height: 100%;
-}
-
-.toggle-container {
+  }
+  
+  .toggle-container {
     display: none;
-}
-
-.links {
+  }
+  
+  .links {
     list-style-type: none;
     display: flex;
-    gap: 4rem;
-}
-
-.links li .dark {
-    color: black;
-}
-
-.links li .light {
+    gap: 4rem;cursor: pointer;
+  }
+  
+  .links li .dark {
+    color: black;cursor: pointer;
+  }
+  
+  .links li .light {
     color: yellow;
-}
-
-.links li a {
+  }
+  
+  .links li a {
     color: #cccccc;
+    font-weight: 600;
     text-decoration: none;
-}
-
-.light li a {
+  }
+  
+  .light li a {
     color: #777777;
-}
-
-.list li:last-of-type a {
+  }
+  
+  .list li:last-of-type a {
     color: #ff3998;
-}
-
-.blur img {
+  }
+  
+  .blur img {
     filter: brightness(0);
-}
-
-@media screen and (min-width: 280px) and (max-width: 1080px) {
+  }
+  
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
     .container {
-        position: relative;
-        padding: 1rem 2rem;
+      position: relative;
+      padding: 1rem 2rem;
     }
-
+  
     .brand-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
     }
-
+  
     .brand img {
-        height: 1.5rem;
+      height: 1.5rem;
     }
-
+  
     .toggle-container {
-        display: block;
-        color: #ffffff;
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 1rem;
-        z-index: 40;
+      display: block;
+      color: #ffffff;
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 1rem;
+      z-index: 40;
     }
-
+  
     .toggleLight {
-        color: #000000;
+      color: #000000;
     }
-
+  
     .toggle {
-        z-index: 40;
-        display: block;
+      z-index: 40;
+      display: block;
     }
-
+  
     .links-container {
-        z-index: 30;
-        background-image: linear-gradient(101deg, #ff3998, #ff8139);
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        right: 0;
-        opacity: 0;
-        width: 0;
-        visibility: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: 0.5s ease-in-out;
+      z-index: 30;
+      background-image: linear-gradient(101deg, #dada13, #00C853);
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 0;
+      width: 0;
+      visibility: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s ease-in-out;
     }
-
+  
     .links {
-        flex-direction: column;
+      flex-direction: column;
     }
-
+  
     .links li a {
-        color: #111111;
+      color: #111111;
     }
-
+  
     .light li a {
-        color: #ffffff;
+      color: #ffffff;
     }
-
+  
     .links li:last-of-type {
-        display: none;
+      display: none;
     }
-
+  
+    .socialMediaLinks {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      padding-top: 1rem;
+    }
+  
     .nav-visible {
-        width: 60vw;
-        visibility: visible;
-        opacity: 1;
+      width: 60vw;
+      visibility: visible;
+      opacity: 1;
     }
-}
+  }
+  
